@@ -4,7 +4,7 @@
   padding-right: 0;
 }
 
-.section-title {
+.team__title, .section-title {
   text-align: center;
 }
 
@@ -259,6 +259,11 @@ img {
 }
 
 .team__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
   color: var(--title-text-color);
 }
 
@@ -278,9 +283,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

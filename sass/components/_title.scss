@@ -50,10 +50,10 @@
 }
 
 .team__title {
-    // @include verticalMargin;
-    // @extend %centered;
+    @include verticalMargin(0, 10px);
+    @extend %centered;
 
-    // @include fonts (500, 16px, 1.19, null);
+    @include fonts (500, 16px, 1.19, null);
 
     color: var(--title-text-color);
 }
