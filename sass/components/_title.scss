@@ -11,8 +11,8 @@
 }
 
 .title {
-    // @include fonts (700, 14px, 1.14, null);
-    // text-transform: uppercase;
+    @include fonts (700, 14px, 1.14, null);
+    text-transform: uppercase;
 
     color: var(--title-text-color);
 }
@@ -28,12 +28,17 @@
     @include fonts (700, 36px, 1.17, null);
 
     @extend %centered;
-    
+
     color: var(--title-text-color);
 }
 
 .features__title {
-    @include verticalMargin;
+    @extend .title;
+    @include verticalMargin(0, 10px);
+    
+    @media screen and (max-width: 767px){
+    text-align: center;
+    }
 }
 
 .about__title {

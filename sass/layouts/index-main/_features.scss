@@ -3,16 +3,43 @@
 
 &__list {
     @extend %list;
+        
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        @include verticalMargin(-15px, -15px);
+        @include horizontallylMargin(-15px, -15px);
+    }
+
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     @include verticalMargin (0, 0);
-    padding-left: 0;
     row-gap: 30px;
-    flex-basis: calc(1170 - (30*3)/4);
+    flex-basis: calc(1170 - (30*3)/4);}
+}
+     
+&__item{
+    
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+                @include verticalMargin (null, 30px)
+            }
+
+         @media screen and (min-width: 1200px){
+    margin-right: 30px;}
+            
+        }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 354px;
+        @include verticalMargin(15px, 15px);
+        @include horizontallylMargin(15px, 15px);
+    }
+
+        
 }
 
-&__item:not(:last-child) {
-    @include horizontallylMargin (null, 30px);
-}
 
 &__pic {
     @include flexCentered;
@@ -26,7 +53,7 @@
 }
 
 &__text {
-    @include verticalMargin (0, 0);
+    @include verticalMargin;
     
     font-style: normal;
     line-height: 1.71;
