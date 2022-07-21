@@ -3,16 +3,40 @@
 
 
 &__list {
+    @extend %list;
+
+    @media screen and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        @include verticalMargin(-15px, -15px);
+        @include horizontallylMargin(-15px, -15px);
+    }
+
     @include flexCentered (flex, space-between, center);
-    @include verticalMargin (0, 0);
-    @include horizontallylMargin (0, 0);
-    padding: 0;
+    @include verticalMargin;
+    @include horizontallylMargin;
+    @include horizontallylPadding;
+    @include verticalPadding;
 }
 }
 
 .clients__item {
-    @include flexCentered;
+    
+    @media screen and (max-width: 767px){
+        width: 210px;
+        @include verticalMargin(15px, 15px);
+        @include horizontallylMargin(15px, 15px);        
+    }
 
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 226px;
+        @include verticalMargin(15px, 15px);
+        &:not(:nth-child(3n)) {
+                margin-right: 15px;}
+        }
+    
+
+    @include flexCentered;
     width: 170px;
     height: 92px;
 

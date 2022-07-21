@@ -2,7 +2,7 @@
   list-style: none;
 }
 
-.team__title, .section-title {
+.section-title {
   text-align: center;
 }
 
@@ -10,6 +10,12 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--primary-white-color);
+}
+@media screen and (max-width: 1199px) {
+  .gallery {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 :root {
@@ -41,7 +47,22 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -187,25 +208,10 @@ img {
 }
 
 .hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 650px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
 .title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
@@ -217,10 +223,19 @@ img {
   line-height: 1.17;
   color: var(--title-text-color);
 }
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
 
 .features__title {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .about__title {
@@ -233,37 +248,18 @@ img {
 }
 
 .team__title {
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
   color: var(--title-text-color);
 }
 
 .footer__title {
-  margin-top: 0;
-  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 
 .gallery__title {
-  margin-top: 0;
-  margin-bottom: 4px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
 .modal__title {
-  margin-top: 2px;
-  margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  text-transform: none;
   color: var(--title-text-color);
 }
 

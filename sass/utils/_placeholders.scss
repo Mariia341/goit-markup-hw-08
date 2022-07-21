@@ -7,8 +7,12 @@
 }
 
 %section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+            @include verticalPadding(60px, 60px);
+        }
+
+    @include verticalPadding(94px, 94px);
 
     background-color: var(--primary-white-color);
 }

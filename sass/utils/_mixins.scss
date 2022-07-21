@@ -4,7 +4,7 @@
     align-items: $ai;
 }
 
-@mixin  verticalMargin ($mt: 0, $mb: 10px) {
+@mixin  verticalMargin ($mt: 0, $mb: 0px) {
     margin-top: $mt;
     margin-bottom: $mb;
 }
@@ -12,6 +12,16 @@
 @mixin horizontallylMargin ($ml: 0, $mr: 0) {
     margin-left: $ml;
     margin-right: $mr;
+}
+
+@mixin verticalPadding ($pt: 0, $pb: 0px) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+
+@mixin horizontallylPadding ($pl: 0, $pr: 0) {
+    padding-left: $pl;
+    padding-right: $pr;
 }
 
 @mixin fonts ($fw: 400, $fs: 14px, $lh: 2 , $ls: 0.03em) {
