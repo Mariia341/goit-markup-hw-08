@@ -1,0 +1,67 @@
+.gallery{
+    @extend %section;
+
+
+&__list {
+    @extend %list;
+
+    display: flex;
+    flex-wrap: wrap;
+    @include verticalMargin (0, 0);
+    @include horizontallylMargin (null, 0);
+
+    padding-left: 0;
+    background-color: var(--primary-white-color);
+}
+
+
+&__link {
+    display: block;
+    @include verticalMargin (0, 0);
+    @include horizontallylMargin (0, 0);
+    padding: 0;
+
+    text-decoration: none;
+}
+
+
+&__desc {
+    padding: 20px 24px;
+
+    background: var(--primary-white-color);
+
+    border: 1px solid #EEEEEE;
+    border-top: 0;
+}
+}
+
+.gallery__item {
+    @include verticalMargin (null, 30px);
+
+
+&:not(:nth-child(3n)) {
+    @include horizontallylMargin (null, 30px);
+}
+
+
+&:hover,
+&:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}    
+}
+
+
+.gallery__text {
+    @include verticalMargin (0, 0);
+    
+    @include fonts (null, 16px, 1.88, none);
+ 
+    color: var(--primary-text-color);
+}
+
+
+
+
+

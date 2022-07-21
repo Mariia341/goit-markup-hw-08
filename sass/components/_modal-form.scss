@@ -1,0 +1,96 @@
+.form {
+
+&__field {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    @include verticalMargin (null, 10px);
+}
+
+
+&__label {
+    @include verticalMargin (null, 4px);
+
+    @include fonts (null, 12px, null, 0.01em);  
+}
+}
+
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+
+    transition: fill 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+.form__field:focus-within> & {
+        fill: var(--accent-color);
+}
+}
+
+
+.form__input,
+.textarea {
+    @include verticalMargin (0, 0);
+    @include horizontallylMargin (0, 0);
+    padding-left: 42px;
+
+    outline: transparent;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.form__field:focus-within>.form__input,
+.form__field:focus-within>.textarea {
+    border-color: var(--accent-color);
+}
+
+.textarea {
+    padding: 12px 16px;
+    resize: none;
+    height: 120px;
+
+
+&::placeholder {
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+}
+
+.form__checkbox-input {
+    appearance: none;
+    position: absolute;
+    @include horizontallylMargin (14px, null);
+}
+
+.form__checkbox-icon {
+    display: inline-block;
+    @include horizontallylMargin (12px, null);
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+
+    transition: background-color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+.form__checkbox-input:checked+& {
+    border: 2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+}
+}
+
+
+.policy-link {
+    color: var(--accent-color);
+}

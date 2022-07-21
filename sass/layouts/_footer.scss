@@ -1,0 +1,11 @@
+.footer {
+    padding-bottom: 60px;
+    
+    background-color: var(--footer-bg-color);
+
+
+&-content {
+    @include flexCentered (flex, flex-start, null);
+}
+}
+

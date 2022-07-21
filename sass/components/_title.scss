@@ -1,0 +1,72 @@
+.hero__title {
+    @include verticalMargin (0, 30px);
+    @include horizontallylMargin (auto, auto);
+    max-width: 650px;
+
+    @include fonts (900, 44px, 1.36, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+}
+
+.title {
+    @include fonts (700, 14px, 1.14, null);
+    text-transform: uppercase;
+
+    color: var(--title-text-color);
+}
+
+.section-title {
+    @include verticalMargin (0, 50px);
+    @extend %centered;
+
+    @include fonts (700, 36px, 1.17, null);
+
+    color: var(--title-text-color);
+}
+
+.features__title {
+    @include verticalMargin;
+}
+
+.about__title {
+    @include verticalMargin (0, 0);
+    @include horizontallylMargin;
+    text-align: center;
+
+    color: var(--primary-white-color);
+}
+
+.team__title {
+    @include verticalMargin;
+    @extend %centered;
+
+    @include fonts (500, 16px, 1.19, null);
+
+    color: var(--title-text-color);
+}
+
+.footer__title {
+    @include verticalMargin (0, 20px);
+   
+    color: var(--primary-white-color);
+}
+
+.gallery__title {
+    @include verticalMargin (0, 4px);
+    
+    @include fonts (700, 18px, 2, 0.06em);
+
+    color: var(--title-text-color);   
+}
+
+.modal__title {
+    @include verticalMargin (2px, 12px);
+
+    @include fonts (null, 20px, 1.15, null);
+    text-align: center;
+    text-transform: none;
+
+    color: var(--title-text-color);
+}
