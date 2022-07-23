@@ -61,5 +61,17 @@
 
 .footer__contacts {
     display: block;
-    @include horizontallylMargin (null, 70px);
+   
+    
+    @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+        
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+                @include horizontallylMargin(60px, auto);           
+            }
+
+     @media screen and (min-width: 1200px) {
+            @include horizontallylMargin (0, 70px);
+        }
 }

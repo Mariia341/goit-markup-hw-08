@@ -33,7 +33,16 @@
 // footer__button
 
 .footer__button {
-    @include horizontallylMargin (12px, null);
+    @media screen and (max-width: 1199px) {
+        display: block;
+            margin-top: 20px;
+        @include horizontallylMargin(auto, auto)
+        }
+ @media screen and (min-width: 1200px) {
+        @include horizontallylMargin (12px, null);
+ }
+        
+
 
     padding: 10px 29px;
   }

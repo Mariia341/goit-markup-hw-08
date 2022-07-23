@@ -1,11 +1,16 @@
 .hero__title {
-    // @include verticalMargin (0, 30px);
-    // @include horizontallylMargin (auto, auto);
-    // max-width: 650px;
+    @include verticalMargin (0, 30px);
+    @include horizontallylMargin (auto, auto);
+    max-width: 650px;
 
-    // @include fonts (900, 44px, 1.36, 0.06em);
-    // text-align: center;
-    // text-transform: uppercase;
+    @media screen and (max-width: 1199px) {
+             @include fonts (900, 26px, 1.6, 0.06em); 
+            max-width: 360px;
+       }
+
+    @include fonts (900, 44px, 1.36, 0.06em);
+    text-align: center;
+    text-transform: uppercase;
 
     color: var(--primary-white-color);
 }
@@ -59,7 +64,12 @@
 }
 
 .footer__title {
-    // @include verticalMargin (0, 20px);
+    @extend .title;
+    @include verticalMargin (0, 20px);
+
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
    
     color: var(--primary-white-color);
 }

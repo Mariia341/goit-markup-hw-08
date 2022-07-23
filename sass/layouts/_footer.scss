@@ -1,11 +1,22 @@
 .footer {
-    padding-bottom: 60px;
-    
+    @include verticalPadding(60px, 60px);
+
     background-color: var(--footer-bg-color);
 
 
 &-content {
-    @include flexCentered (flex, flex-start, null);
+
+    @media screen and (min-width: 1200px) {
+            @include flexCentered (flex, flex-start, null);
+        }
+
 }
+}
+
+.contacts__social-media{
+        @media screen and (min-width: 768px) {
+                display: flex;            
+            }
+        
 }
 
