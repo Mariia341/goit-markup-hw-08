@@ -70,7 +70,11 @@
 
 .form__checkbox-icon {
     display: inline-block;
-    @include horizontallylMargin (12px, null);
+
+    @media screen and (min-width:1199px) {
+            @include horizontallylMargin (12px, null);
+        }
+   
     width: 16px;
     height: 15px;
 
@@ -91,6 +95,17 @@
 }
 
 
-.policy-link {
+.form__policy-link {
+
+    @media screen and (max-width:1199px) {
+            @include fonts(null, 12px, 1.17, null);
+        }
+   
     color: var(--accent-color);
+}
+
+.form__policy-text{
+    @media screen and (max-width:1199px) {
+            @include fonts(null, 12px, 1.17, null);
+        }
 }
