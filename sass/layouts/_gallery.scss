@@ -7,8 +7,17 @@
 
     display: flex;
     flex-wrap: wrap;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: flex;
+            flex-wrap: wrap;
+            @include verticalMargin(-15px, -15px);
+            @include horizontallylMargin(-15px, -15px);
+    }
+
+          @media screen and (min-width: 1200px){
     @include verticalMargin (0, 0);
-    @include horizontallylMargin (null, 0);
+    @include horizontallylMargin (null, 0);}
 
     padding-left: 0;
     background-color: var(--primary-white-color);
@@ -36,11 +45,22 @@
 }
 
 .gallery__item {
-    @include verticalMargin (null, 30px);
+    @media screen and (max-width: 767px) {
+width: 100%;        
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+            width: 354px;
+margin: 15px;
+         }
+
+                        @media screen and (min-width: 768px){
+    @include verticalMargin (null, 30px);}
 
 
 &:not(:nth-child(3n)) {
-    @include horizontallylMargin (null, 30px);
+    @media screen and (min-width: 1200px) {
+    @include horizontallylMargin (null, 30px);}
 }
 
 

@@ -1,0 +1,41 @@
+.mobile-socials {
+
+    @media screen and (max-width: 767px) {
+        list-style: none;
+        @include horizontallylPadding;
+        @include verticalMargin;
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &__item:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            @include horizontallylMargin (0, 10px);
+
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            padding-right: 10px;
+        }
+    }
+
+
+    &__link {
+        text-decoration: none;
+
+    }
+
+    &__text {
+
+        @media screen and (max-width: 767px) {
+            @include fonts (500, 18px, 1.22, 0.02em);
+
+            text-transform: capitalize;
+            color: var(--accent-color);
+        }
+    }
+
+
+}

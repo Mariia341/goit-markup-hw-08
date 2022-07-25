@@ -64,9 +64,19 @@
 }
 
  /* filter__button */
+.filter{
+    @media screen and (max-width: 767px){
+        display: inline-flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
 
+
+
+}
 .filter__button {
-    @include verticalMargin (null, 34px);
+    @media screen and (min-width: 768px){
+    @include verticalMargin (null, 34px);}
     padding: 6px 22px; 
 
     @include fonts(500, 16px, 1.62, null);

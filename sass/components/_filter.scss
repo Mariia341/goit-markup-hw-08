@@ -1,12 +1,25 @@
  .filter {
+        @media screen and (max-width: 767px) {
+                display: inline-flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                @include verticalMargin(0, 40px);
+            }
+
+                          @media screen and (min-width: 768px){
     @include flexCentered (flex, center, center);
     @include verticalMargin (0, 0);
-    padding-left: 0;
-
+   }
+ padding-left: 0;
     list-style-type: none;
      
 
     &__item:not(:last-child) {
         @include horizontallylMargin (null, 8px);     
+    }
+
+    &__item:not(:nth-last-child(-n + 2)){
+        @media screen and (max-width: 767px){
+        @include verticalMargin(null, 15px);}
     }
  }

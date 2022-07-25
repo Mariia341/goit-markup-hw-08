@@ -1,21 +1,53 @@
 .nav__list {
     @extend %list;
-    display: flex;
+
+    @media screen and (max-width: 767px) {
+       margin: 0;
+       
+    }
+
+         @media screen and (min-width: 768px) and (max-width: 1199px){
+display: flex;
     @include verticalMargin (0, 0);
-    @include horizontallylMargin (93px, 0);
+    @include horizontallylMargin (88px, 84px);
     padding-left: 0;
+
+         }
+    @media screen and (min-width: 1200px) {
+          
+                display: flex;
+                    @include verticalMargin (0, 0);
+                    @include horizontallylMargin (93px, 305px);
+                    padding-left: 0;
+        }  
 }
 
 .nav__item:not(:last-child) {
-    @include horizontallylMargin (null, 50px);
+
+        @media screen and (max-width: 767px) {
+                @include verticalMargin (null, 32px);
+            }
+
+        @media screen and (min-width: 768px) {
+                @include horizontallylMargin (null, 50px);
+            }
+   
 }
 
 .nav__link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: inline-block;
+   
 
-    @include fonts (500, null, 1.14, 0.02em);
+    @media screen and (max-width: 767px) {
+            @include fonts (500, 40px, 1.18, 0.02em);        }
+    
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+            padding-bottom: 32px;
+            @include fonts (500, null, 1.14, 0.02em);
+            }
+  
     text-decoration: none;
 
     color: var(--title-text-color);
@@ -31,22 +63,27 @@
 
 
 .nav__link--current {
+    @media screen and (min-width: 768px) {
     position: relative;
-
+    }
     color: var(--accent-color);
 
 &::after {
-    display: inline-block;
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    
-    background: var(--accent-color);
+
+        @media screen and (min-width: 768px) {
+                    display: inline-block;
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                    
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 2px;
+                    
+                        background: var(--accent-color);
+            }
+
     }
 }
 

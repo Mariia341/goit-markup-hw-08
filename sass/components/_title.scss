@@ -75,9 +75,9 @@
 }
 
 .gallery__title {
-    // @include verticalMargin (0, 4px);
+    @include verticalMargin (0, 4px);
     
-    // @include fonts (700, 18px, 2, 0.06em);
+    @include fonts (700, 18px, 2, 0.06em);
 
     color: var(--title-text-color);   
 }
