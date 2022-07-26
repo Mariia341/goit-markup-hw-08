@@ -673,9 +673,9 @@ img {
     margin-right: auto;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
   .subscribe-form__input {
-    min-width: 358px;
+    width: inherit;
   }
 }
 .subscribe-form__input:not(:-moz-placeholder-shown) + .subscribe-form__text {
