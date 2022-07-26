@@ -4,19 +4,20 @@
     background-color: var(--footer-bg-color);
 
 
-&-content {
+        &-content {
 
-    @media screen and (min-width: 1200px) {
-            @include flexCentered (flex, flex-start, null);
+                @media screen and (min-width: 1200px) {
+                        @include flexCentered (flex, flex-start, null);
+                    }
+
         }
-
-}
 }
 
 .contacts__social-media{
-        @media screen and (min-width: 768px) {
+
+    @media screen and (min-width: 768px) {
                 display: flex;            
-            }
+        }
         
 }
 

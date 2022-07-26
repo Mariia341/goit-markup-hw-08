@@ -1089,6 +1089,10 @@ img {
   border-top: 0;
 }
 
+.gallery__desc--direction {
+  padding-bottom: 56px;
+}
+
 @media screen and (max-width: 767px) {
   .gallery__item {
     width: 100%;

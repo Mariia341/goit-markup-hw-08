@@ -15,12 +15,14 @@
     color: var(--primary-white-color);
 }
 
+
 .title {
     @include fonts (700, 14px, 1.14, null);
     text-transform: uppercase;
 
     color: var(--title-text-color);
 }
+
 
 .section-title {
     
@@ -37,6 +39,7 @@
     color: var(--title-text-color);
 }
 
+
 .features__title {
     @extend .title;
     @include verticalMargin(0, 10px);
@@ -46,6 +49,7 @@
     }
 }
 
+
 .about__title {
     @include verticalMargin (0, 0);
     @include horizontallylMargin;
@@ -53,6 +57,7 @@
 
     color: var(--primary-white-color);
 }
+
 
 .team__title {
     @include verticalMargin(0, 10px);
@@ -62,6 +67,7 @@
 
     color: var(--title-text-color);
 }
+
 
 .footer__title {
     @extend .title;
@@ -74,6 +80,7 @@
     color: var(--primary-white-color);
 }
 
+
 .gallery__title {
     @include verticalMargin (0, 4px);
     
@@ -81,6 +88,7 @@
 
     color: var(--title-text-color);   
 }
+
 
 .modal__title {
     @include verticalMargin (2px, 12px);

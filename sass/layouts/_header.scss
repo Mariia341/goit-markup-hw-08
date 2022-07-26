@@ -1,19 +1,20 @@
 .header {
     border-bottom: 1px solid var(--header-boder-color);
 
-    &__content {
-        @include flexCentered (flex, null, center);
+        &__content {
+            @include flexCentered (flex, null, center);
         }
 
-        @media screen and (max-width: 767px){
-            @include flexCentered (null, space-between, null);}
+    @media screen and (max-width: 767px){
+        @include flexCentered (null, space-between, null);
+    }
         
 }
 
 .menu-container--tablet-flex{
+
     @media screen and (min-width: 768px) {
-            display: inline-flex;
-           
+            display: inline-flex;           
         }
 }
 
