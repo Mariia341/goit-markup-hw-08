@@ -3,10 +3,41 @@
     max-width: 1600px;
     height: 600;
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/hero-bg.jpg);
     background-color: #C4C4C4;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../../images/hero/mobile-heroimg.jpg);
+        // Для ретіна екранів мобільна версія
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/mobile-heroimg@2x.jpg);
+            }
+        
+            @media screen and (min-width: 768px) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/tablet-heroimg.jpg);
+        
+                // Для ретіна екранів планшетна версія
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/tablet-heroimg@2x.jpg);
+                }
+            }
+        
+            @media screen and (min-width: 1200px) {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/desktop-heroimg.jpg);
+        
+                // Для ретіна екранів десктопна версія
+                @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/desktop-heroImg@2x.jpg);
+                }
+            }
 }
