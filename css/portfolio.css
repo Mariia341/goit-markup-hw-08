@@ -673,6 +673,11 @@ img {
     margin-right: auto;
   }
 }
+@media screen and (max-width: 767px) {
+  .subscribe-form__input {
+    min-width: 358px;
+  }
+}
 .subscribe-form__input:not(:-moz-placeholder-shown) + .subscribe-form__text {
   color: var(--accent-color);
   transform: translateY(-34px);

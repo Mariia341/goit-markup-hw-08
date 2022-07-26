@@ -280,9 +280,17 @@
               <a class="team__link" href="">
                 <img
                   class="team__img"
-                  src="./images/our-team/igor-d.jpg"
+                  srcset="
+                    ./images/our-team/igor-d/ID-desctop-img-270.jpg    270w,
+                    ./images/our-team/igor-d/ID-tablet-img-354.jpg     354w,
+                    ./images/our-team/igor-d/ID-mobile-img-450.jpg     450w,
+                    ./images/our-team/igor-d/ID-desctop-img@2x-540.jpg 540w,
+                    ./images/our-team/igor-d/ID-tablet-img@2x-708.jpg  708w
+                    ./images/our-team/igor-d/ID-mobile-img@2x-900.jpg  900w,
+                  "
+                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 767px) 450px, 100vw"
+                  src="./images/our-team/igor-d/ID-mobile-img.jpg"
                   alt=" Фото Игоря Демьяненко"
-                  width="270"
                 />
               </a>
 
