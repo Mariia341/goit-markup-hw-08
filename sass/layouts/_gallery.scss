@@ -45,7 +45,8 @@
 }
 
 .gallery__desc--direction {
-    padding-bottom: 56px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 56px;}
  
 }
 

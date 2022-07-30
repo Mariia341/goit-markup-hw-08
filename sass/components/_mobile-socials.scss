@@ -1,7 +1,12 @@
 .mobile-socials {
+    list-style: none;
 
-    @media screen and (max-width: 767px) {
-        list-style: none;
+    @media screen and (max-width: 320px) {
+        display: block;
+    padding-left: 0;}
+
+    @media screen and (min-width: 321px) and (max-width: 767px) {
+     
         @include horizontallylPadding;
         @include verticalMargin;
         display: inline-flex;
@@ -13,7 +18,7 @@
     }
 
     &__item:not(:last-child) {
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 321px) and (max-width: 767px) {
             @include horizontallylMargin (0, 10px);
 
             border-right: 1px solid rgba(33, 33, 33, 0.2);

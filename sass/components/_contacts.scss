@@ -56,6 +56,7 @@
 
                 @media screen and (min-width: 768px) and (max-width: 1199px) {
                         @include fonts (500, 12px, 1.22, 0.02em);
+                            inline-size: max-content;
                     }
 
                 @media screen and (min-width: 1200px) {
@@ -80,10 +81,20 @@
 
 
             &--mobmenu-tel{
-                    @media screen and (max-width: 767px) {
+
+                @media screen and (max-width: 320px) {
+                        @include fonts (500, 26px, 1.18, 0.02em);
+                    color: var(--accent-color);}
+
+                    @media screen and (min-width: 321px) and (max-width: 767px) {
                             @include fonts (500, 34px, 1.18, 0.02em);
                             color: var(--accent-color);
-                        }           
+                        }  
+                        
+                    @media screen and (min-width: 768px) and (max-width: 1199px){
+                        margin-top: 10px;}
+
+
                 }
 
 
