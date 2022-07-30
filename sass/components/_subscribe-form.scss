@@ -19,7 +19,13 @@
 .subscribe-form__text {
     position: absolute;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 320px) {
+            top: 50%;
+            left: 33%;
+            transform: translate(-50%, -50%);
+        }
+
+    @media screen and (min-width: 321px) and (max-width: 767px) {
             top: 50%;
             left: 19%;
             transform: translate(-50%, -50%);
@@ -27,7 +33,7 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
             top: 50%;
-            left: 31%;
+            left: 25%;
             transform: translate(-50%, -50%);
         }   
 
@@ -70,6 +76,10 @@
     height: 50px;
     @media screen and (max-width: 320px) {
         width: inherit;}
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 450px;
+        }
 
     outline: transparent;
 

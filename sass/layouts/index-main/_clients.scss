@@ -8,6 +8,7 @@
     @media screen and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         @include verticalMargin(-15px, -15px);
         @include horizontallylMargin(-15px, -15px);
     }

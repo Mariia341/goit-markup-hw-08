@@ -54,6 +54,7 @@
     @include verticalMargin (0, 0);
     @include horizontallylMargin;
     text-align: center;
+    text-transform: uppercase;
 
     color: var(--primary-white-color);
 }

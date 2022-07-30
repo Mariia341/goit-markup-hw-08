@@ -46,6 +46,7 @@
 
 .gallery__desc--direction {
     padding-bottom: 56px;
+ 
 }
 
 
@@ -69,7 +70,16 @@
     @media screen and (min-width: 1200px) {
             @include horizontallylMargin (null, 30px);
         }
-}
+    }
+
+
+&:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;}
+    }
+
+       
+
    
 
 
